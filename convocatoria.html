@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <link rel="icon" href="img/icono.png" type="icon" />
+    <meta charset="utf-8">
+    <title>Olimpiada de Informática</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+
+    <!-- Owl Carousel Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- Custom Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- jQuery from CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- Owl Carousel JS from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="/js/pdfobject.js"></script>
+    <script>PDFObject.embed("Convocatoria_OMI_2024.pdf", "#pdf-viewer");</script>
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .carousel img {
+            max-width: 30%;
+            height: 30%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="position-relative p-0" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-uatx navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="index.html" class="navbar-brand">
+                    <img class="logo" src="img/Logo-FCBIyT 2.png" alt="Image">
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav-dropdown-divider"></div>
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Inicio</a>
+                        <a href="about.html" class="nav-item nav-link">Acerca de Nosotros</a>
+                        <div class="nav-item dropdown">
+                            <a class="nav-item nav-link dropdown-toggle" href="#" id="convocatoria" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                OMI
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="convocatoria">
+                                <li><a class="dropdown-item" href="convocatoria.html">Convocatorias</a></li>
+                            </ul>
+                        </div>
+                    </div>
+            </nav>
+        </div>
+    </div>
+
+    <br />
+    <br />
+    <div class="contact-information py-4">
+        <div class="pdf-viewer">
+            <object data="Convocatoria_OMI_2024.pdf" type="application/pdf" width="100%" height="550px">
+                <a href="Convocatoria_OMI_2024.pdf" target="_blank">Descargar PDF</a>
+            </object>
+        </div>
+    </div>
+    
+
+    <!-- Contenido del footer -->
+    <div class="text-center py-3">
+        <a href="https://www.olimpiadadeinformatica.org.mx/OMI/OMI/Inicio.aspx" class="btn btn-primary mt-1">Más
+            Información</a>
+        <a href="registro.html" class="btn btn-primary mt-1">Regístrate</a>
+    </div>    
+<script>
+    $(document).ready(function () {
+        $("[data-fancybox]").fancybox({
+            type: 'iframe', // Indica que el contenido es un iframe
+            iframe: {
+                preload: false, // Evitar precargar el iframe
+            },
+            maxWidth: 800, // Establece el ancho máximo del iframe
+            maxHeight: 1200, // Establece la altura máxima del iframe
+            autoSize: true, // Ajusta automáticamente el tamaño del iframe
+        });
+    });
+</script>
+
+
+<!-- Back to Top -->
+
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/tempusdominus/js/moment.min.js"></script>
+<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+<script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+<!-- Contact Javascript File -->
+<script src="mail/jqBootstrapValidation.min.js"></script>
+<script src="mail/contact.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
